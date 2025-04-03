@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<title>Adelson, Annie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+h1,h2,h3,h4,h5 {color: rgb(220, 220, 220)}
+p,ul {font-size: 1em;
+	color: rgb(200, 200, 200)}
+a { text-decoration: none;
+	font-weight: bold;
+	color: #777; }
+a:hover { text-decoration: underline; }
+img.head-image { width: 100%;max-width: 600px; }
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 150px */
+.w3-sidebar {width: 150px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (150px) */
+#main {margin-left: 150px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+	<img src="/images/MC_headshot.jpg" style="width:100%">
+
+	<a href="#" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-home w3-xlarge"></i>
+	<p>HOME</p>
+	</a>
+
+	<a href="#about" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-user w3-xlarge"></i>
+	<p>ABOUT</p>
+	</a>
+
+	<a href="#education" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-lightbulb-o w3-xlarge"></i>
+	<p>EDUCATION</p>
+	</a>
+
+	<a href="#publications" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-book w3-xlarge"></i>
+	<p>PUBLICATIONS</p>
+	</a>
+
+	<!--
+	<a href="#recordings" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-video-camera w3-xlarge"></i>
+	<p>RECORDINGS</p>
+	</a>
+	-->
+
+	<a href="#presentations" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-microphone w3-xlarge"></i>
+	<p>PRESENTATIONS</p>
+	</a>
+
+	<!--
+	<a href="#gallery" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="fa fa-photo w3-xlarge"></i>
+	<p>ACADEMIC GALLERY</p>
+	</a>
+	-->
+
+	<a href="#resume" class="w3-bar-item w3-button w3-padding-small w3-hover-black">
+	<i class="	fa fa-paperclip w3-xlarge"></i>
+	<p>RESUME</p>
+	</a>
+</nav>
+
+
+
+<!-- Small screen dropdown navbar (hidden on medium and large screens) -->
+<div class="w3-top">
+	<div class="w3-bar w3-black w3-card">
+		<a class="w3-bar-item w3-button w3-padding-medium w3-hide-medium w3-hide-large w3-left w3-xlarge" href="javascript:void(0)" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+
+		<a href="https://scholar.google.com/citations?user=w3B4oXkAAAAJ&hl=en" class="w3-bar-item w3-button w3-padding-medium w3-hide-medium w3-hide-large w3-right w3-large" ><i class="material-icons w3-xlarge">school</i></a>
+		<a href="https://github.com/aadelson" class="w3-bar-item w3-button w3-padding-medium w3-hide-medium w3-hide-large w3-right w3-large" ><i class="fa fa-github"></i></a>
+
+		<div id="navSmall" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+			<a href="#about" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">About</a>
+			<a href="#education" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Education</a>
+			<a href="#publications" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Publications</a>
+			<!-- <a href="#recordings" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Recordings</a> -->
+			<a href="#presentations" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Presentations</a>
+			<!-- <a href="#gallery" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Academic Gallery</a> -->
+			<a href="#resume" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Resume</a>
+		</div>
+
+	</div>
+</div>
+
+
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+<!-- Header/Home -->
+<header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+	<h1 class="w3-jumbo">Annie Adelson</h1>
+	<p>anne.adelson@utas.edu.au</p>
+	<p><a href="https://scholar.google.com/citations?user=d3EALhcAAAAJ" class="w3-button w3-padding-large w3-hover-black w3-hide-small">
+	<i class="material-icons w3-xlarge">school</i></a>
+	<a href="https://github.com/aadelson" class="w3-button w3-padding-large w3-hover-black w3-hide-small">
+	<i class="fa fa-github-square w3-xlarge"></i></a>
+	<img src="/images/MC_header.jpg" class="head-image">
+</header>
+
+
+
+<!-- About Section -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+
+<hr style="width:200px" class="w3-opacity">
+<p>
+	to come
+</p>
+</div>
+
+
+
+<!-- Education -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="education">
+
+<h2>Education</h2>
+<hr style="width:200px" class="w3-opacity">
+<p>
+<ul>
+  <li>PhD, Physical Oceanography, Scripps Institution of Oceanography - UC San Diego</li>
+  <li>MS, Civil and Enivronmental Engineering, Stanford University</li>
+  <li>BS, Biology with Honors, Stanford University</li>
+</ul>
+</p>
+</div>
+
+
+
+<!-- Publications -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="publications">
+
+<h2>Publications</h2>
+<hr style="width:200px" class="w3-opacity">
+
+<p>
+to come
+</p>
+</div>
+
+<!-- Publications -->
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="presentations">
+
+<h2>Presentations</h2>
+<hr style="width:200px" class="w3-opacity">
+
+<h3>Talks</h3>
+<p><b>2024:</b></p>
+<p>
+	to come
+</p>
+<br>
+
+<h3>Posters</h3>
+<p><b>2024:</b></p>
+<p>
+	to come
+</p>
+
+</div>
+
+
+
+
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="resume">
+
+<h2>Resume</h2>
+<p>
+to come
+</p>
+
+</div>
+
+
+
+<!-- Academic Gallery -->
+<!--
+<div class="w3-content w3-justify w3-text-grey w3-padding-64" id="gallery">
+
+<h2>Academic Gallery</h2>
+<hr style="width:200px" class="w3-opacity">
+	<div class="w3-row-padding" style="margin:0 -16px">
+		<div class="w3-third">
+			<img src="/images/gallery/geo_cvd_cropped.jpg" style="width:90%">
+			<img src="/images/gallery/COP28_cropped.jpeg" style="width:90%">
+		</div>
+		<div class="w3-third">
+			<img src="/images/gallery/TheNat_art.jpg" style="width:90%">
+			<img src="/images/gallery/fulbright.jpg" style="width:90%" title="Image credit: Fulbright New Zealand">
+			<img src="/images/gallery/government_house.jpg" style="width:90%" title="Image credit: McGuinness Institute">
+		</div>
+		<div class="w3-third">
+			<img src="/images/gallery/DeepArgo_ErikJepsenUCSD_resize.jpg" style="width:90%" title="Image credit: Erik Jepsen/UC San Diego">
+			<img src="/images/gallery/OSM2020_cropped.jpg" style="width:90%">
+			<img src="/images/gallery/Tangaroa.jpg" style="width:90%">
+		</div>
+	</div>
+
+</div>
+-->
+
+
+
+<!-- Footer -->
+<footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+	<p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+
+
+<!-- Scripts to make the small-screen drop down work -->
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navSmall");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body>
+</html>
